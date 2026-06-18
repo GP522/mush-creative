@@ -483,3 +483,67 @@ article.cta-section{
 article.wall-of-fame {padding: 130px 10px 60px 50px;}
 .cta-content h2{font-size: 140px;}
 }
+
+
+
+
+@media (max-width:780.98px) {
+.title-hd h1 {font-size: 50px;line-height: normal;}
+article.wrapperarticle{min-height: auto;}
+.showcase article {flex: 0 0 auto; min-height: auto !important;}
+article.wrapperarticle{padding-bottom: 60px;}
+.btn.Gettouch{margin: 30px auto 0px;}
+article.gridarticle{display: block;}
+.details-text {padding: 0px 20px;}
+.details-text h4{font-size: 50px; line-height: normal;}
+.details-text p{margin-bottom: 12px; font-size: 16px; margin-top: 0px;}
+.webp-image{padding: 0px 20px;}
+
+article.build-section{padding: 50px 20px;}
+.heading h2{font-size: 50px; line-height: normal;}
+.heading p{font-size: 18px; line-height: 22px;}
+.heading p br{display: none;}
+.venn-diagram{ margin-top: 20px; margin-bottom: 20px;}
+.circle{width: 320px; height: 320px; margin: 0 auto;}
+.circle-left{left: 40px;}
+.circle-right{right: 40px;}
+.venn-wrapper{display: block; text-align: center;}
+.center-shape {width: 60px;height: 150px;}
+
+
+article.empathy-section{padding: 50px 20px;}
+.empathy-grid {grid-template-columns: 380px 1fr;}
+
+.wall-grid {grid-template-columns: repeat(2, 1fr);gap: 14px;}
+article.wall-of-fame{padding: 0px 20px 50px 20px; display: block;}
+
+.cta-content h2 {font-size: 50px;line-height: normal; margin-top: 0px;}
+.cta-content h2 br{display: none;}
+article.cta-section{padding: 0px 20px 50px 20px;}
+
+}
+
+
+
+
+
+@media (max-width:680.98px) {
+
+.circle-left{left: 20px;}
+.circle{width: 210px; height: 210px; margin: 0 auto;}
+.circle-right{right: 20px;}
+
+
+
+.empathy-grid{grid-template-columns: repeat(1, 1fr);}
+.wall-grid {grid-template-columns: repeat(1, 1fr);gap: 14px;}
+
+article.wall-of-fame{padding: 0px 20px 50px 20px; display: block;}
+.fame-content h2{font-size: 40px;}
+.fame-content h2 br{display: none;}
+.fame-content{padding: 0px; margin-top: 20px;}
+
+
+
+
+  }
