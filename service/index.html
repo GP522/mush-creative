@@ -106,6 +106,22 @@
           <a href="#" class="btn Gettouch">Let’s Talk <img src="../studio/images/arrow.svg" alt=""></a>
         </div>
 
+        <div class="floating-images">
+          <img src="../service/images/img1.svg" class="img img1">
+          <img src="../service/images/img2.svg" class="img img2">
+          <img src="../service/images/img1.svg" class="img img3">
+          <img src="../service/images/img2.svg" class="img img4">
+          <img src="../service/images/img1.svg" class="img img5">
+          <img src="../service/images/img2.svg" class="img img6">
+
+          <img src="../service/images/img1.svg" class="img img7">
+          <img src="../service/images/img2.svg" class="img img8">
+         <img src="../service/images/img1.svg" class="img img9">
+          <img src="../service/images/img2.svg" class="img img10">
+          <img src="../service/images/img1.svg" class="img img11">
+          <img src="../service/images/img2.svg" class="img img12">
+        </div>
+
       </article>
 
       <article class="wrapperarticle brand-section">
@@ -418,6 +434,29 @@
   <script src="../js/main.js"></script>
 
   <script src="../studio/js/studio.js"></script>
+
+<script>
+  const container = document.querySelector('.floating-images');
+
+for (let i = 0; i < 25; i++) {
+    const img = document.createElement('img');
+
+    img.src = i % 2
+        ? '../service/images/img1.svg'
+        : '../service/images/img2.svg';
+
+    img.classList.add('img');
+
+    img.style.left = Math.random() * 100 + '%';
+    img.style.width = (60 + Math.random() * 120) + 'px';
+    img.style.height = img.style.width;
+    img.style.animationDuration = (12 + Math.random() * 10) + 's';
+    img.style.animationDelay = (-Math.random() * 20) + 's';
+
+    container.appendChild(img);
+}
+</script>
+  
 </body>
 
 </html>

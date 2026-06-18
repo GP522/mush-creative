@@ -499,6 +499,102 @@ margin-top: 0px;
 
 
 
+
+
+
+/* Floating Images */
+.floating-images .img {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+     animation: floatUp 8s linear infinite;
+}
+
+
+
+/* Left Side */
+.img1 {
+    bottom: 280px;
+    left: 30px;
+    /* transform: rotate(-8deg); */
+}
+
+.img2 {
+    bottom: 100px;
+    left: 200px;
+}
+
+.img3 {
+    bottom: 80px;
+    left: 0px;
+}
+
+.img4 {
+    bottom: 310px;
+    left: 220px;
+    /* transform: rotate(8deg); */
+}
+
+/* Right Side */
+
+
+.img5 {
+   bottom: 50px;
+    right: 420px
+}
+
+.img6 {
+  bottom: 90px;
+    right: 240px;
+   
+}
+
+.img7 {
+       bottom: 300px;
+    right: 20px;
+   
+}
+
+.img8 {
+    bottom: 50px;
+    right: 50px;
+}
+
+
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(10deg);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .brand-section {
   position: relative;
 }
