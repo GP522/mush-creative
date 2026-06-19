@@ -116,10 +116,10 @@
 
           <img src="../service/images/img1.svg" class="img img7">
           <img src="../service/images/img2.svg" class="img img8">
-         <img src="../service/images/img1.svg" class="img img9">
+         <!-- <img src="../service/images/img1.svg" class="img img9">
           <img src="../service/images/img2.svg" class="img img10">
           <img src="../service/images/img1.svg" class="img img11">
-          <img src="../service/images/img2.svg" class="img img12">
+          <img src="../service/images/img2.svg" class="img img12"> -->
         </div>
 
       </article>
@@ -436,9 +436,29 @@
   <script src="../studio/js/studio.js"></script>
 
 <script>
-  const container = document.querySelector('.floating-images');
+const container = document.querySelector('.floating-images');
 
-for (let i = 0; i < 25; i++) {
+const isMobile = window.innerWidth <= 767;
+const isTablet = window.innerWidth <= 991;
+
+let imageCount = 25;
+let minSize = 60;
+let maxSize = 180;
+
+if (isTablet) {
+    imageCount = 18;
+    minSize = 50;
+    maxSize = 120;
+}
+
+if (isMobile) {
+    imageCount = 12;
+    minSize = 40;
+    maxSize = 80;
+}
+
+for (let i = 0; i < imageCount; i++) {
+
     const img = document.createElement('img');
 
     img.src = i % 2
@@ -447,11 +467,17 @@ for (let i = 0; i < 25; i++) {
 
     img.classList.add('img');
 
+    const size = Math.random() * (maxSize - minSize) + minSize;
+
     img.style.left = Math.random() * 100 + '%';
-    img.style.width = (60 + Math.random() * 120) + 'px';
-    img.style.height = img.style.width;
-    img.style.animationDuration = (12 + Math.random() * 10) + 's';
-    img.style.animationDelay = (-Math.random() * 20) + 's';
+    img.style.width = size + 'px';
+    img.style.height = size + 'px';
+
+    img.style.animationDuration =
+        (10 + Math.random() * 8) + 's';
+
+    img.style.animationDelay =
+        (-Math.random() * 20) + 's';
 
     container.appendChild(img);
 }

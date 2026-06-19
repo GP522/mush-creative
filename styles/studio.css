@@ -697,17 +697,6 @@ article.glob-section{position: relative; display: block; padding: 160px 20px; te
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* responsive css */
 
 @media (max-width: 1440.98px) {
@@ -782,6 +771,33 @@ article.glob-section{padding: 0px 20px 50px 20px;}
 .showcase article{display: block;}
 
 
+.floating-images{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+.floating-images .img{
+    position:absolute;
+    object-fit:cover;
+    animation:floatUp linear infinite;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(50vh);
+    }
+    to{
+        transform:translateY(-50vh);
+    }
+}
+
+
+
+
+
+
 }
 
 
@@ -804,7 +820,28 @@ article.wall-of-fame{padding: 0px 20px 50px 20px; display: block;}
 .fame-content h2 br{display: none;}
 .fame-content{padding: 0px; margin-top: 20px;}
 
+.title-hd h1 {font-size: 40px;}
+.title-hd p{font-size: 20px; line-height: normal;}
+.details-text h4{font-size: 40px;}
+.heading h2{font-size: 40px;}
+.fame-content h2 {font-size: 35px;}
 
-
+.cta-content h2 {
+        font-size: 40px;}
 
   }
+
+
+
+  @media (max-width: 480.98px) {
+    .center-shape {
+        width: 60px;
+        height: 130px;
+    }
+    .cta-images{margin: 0px;}
+.btn.Gettouch {
+        margin: 5px auto 0px;
+    }
+
+
+}
