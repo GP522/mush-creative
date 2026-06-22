@@ -11,7 +11,13 @@ p{font-family: "degular", sans-serif;}
 
 th{font-family: "degular", sans-serif;}
 td{font-family: "degular", sans-serif;}
-
+.Appoitmentbtn {
+    position: absolute;
+    top: 30px;
+    right: 13%;
+    z-index: 2;
+}
+.Appoitmentbtn .btn.Gettouch{margin: 0px; height: 51px;}
 
 .title-hd {
   position: relative;
@@ -706,10 +712,33 @@ article.glob-section{position: relative; display: block; padding: 160px 20px; te
 .webp-image img{width: 100%;}
 article.wall-of-fame {padding: 130px 10px 60px 50px;}
 .cta-content h2{font-size: 140px;}
+
+
+.Appoitmentbtn {right: 6%;}
+
 }
 
+@media (max-width: 1199.98px) {
+.Appoitmentbtn .btn.Gettouch{font-size: 14px;}
+.Appoitmentbtn {right: 2%;}
+.services-hd h2{font-size: 52px; line-height: 56px;}
+.branddlf{gap: 20px;}
+.brand-content h4{font-size:38px; line-height: normal;}
+.service-table td{font-size: 18px;}
+.brand-content{width: auto;}
+.brand-content p{font-size: 18px;}
+.brand-content{padding: 0px 20px;}
+.service-table th{font-size: 18px; padding: 0px;}
+.title-hd h1 {font-size: 120px; line-height: normal;}
+.details-text h4{font-size:38px; line-height: normal;}
+.details-text {padding: 0px 30px;}
 
-
+.circle{width: 220px; height: 220px; margin: 0 auto;}
+.center-shape {height: 158px;}
+.venn-wrapper{gap: 0px;}
+.fame-content h2{font-size:30px; line-height: normal;}
+.fame-content p{font-size: 18px; line-height: normal;}
+}
 
 @media (max-width:780.98px) {
 .title-hd h1 {font-size: 50px;line-height: normal;}
@@ -734,6 +763,7 @@ article.build-section{padding: 50px 20px;}
 .circle-right{right: 40px;}
 .venn-wrapper{display: block; text-align: center;}
 .center-shape {width: 60px;height: 150px;}
+
 
 
 article.empathy-section{padding: 50px 20px;}
